@@ -1,0 +1,177 @@
+* {
+    font-weight: 300;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 100;
+    background-color: #fff;
+    font-family: "Lato", sans-serif;
+  }
+  h1 {
+    font-weight: normal;
+    font-size: 28px;
+  }
+  .container {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.01fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr;
+    grid-template-areas:
+      "sidebar main main main main main"
+      "sidebar main main main main main"
+      "sidebar main main main main main"
+      "sidebar main main main main main"
+      "sidebar main main main main main"
+      "sidebar main main main main main"
+      "sidebar main main main main main"
+      "sidebar main main main main main"
+      "sidebar main main main main main";
+  }
+  .content{
+    height: 300px;
+  }
+  .content-1 {
+    grid-area: content-1;
+    background-color: red;
+    height: 100px;
+  }
+  .content-2 {
+    grid-area: content-2;
+    background-color: aqua;
+  }
+  .content-3 {
+    grid-area: content-3;
+    background-color: palevioletred;
+  }
+  .content-4 {
+    grid-area: content-4;
+    background-color: aquamarine;
+  }
+  .content-5 {
+    grid-area: content-5;
+    background-color:peachpuff
+  }
+  .content-6 {
+    grid-area: content-6;
+    background-color:peru
+  }
+  .content-7 {
+    grid-area: content-7;
+    background-color:plum
+  }
+  .content-8 {
+    grid-area: content-8;
+    background-color:powderblue
+  }
+  .content-9 {
+    grid-area: content-9;
+    background-color:purple
+  }
+  .main {
+    line-height: 1.8rem;
+    margin: 0;
+    padding: 0;
+    margin-right: 5rem;
+    margin-left: 4.85rem;
+    background-color: white;
+    grid-area: main;
+  }
+  .sidebar {
+    padding: 0;
+    background-color: #015360;
+    grid-area: sidebar;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+  
+  .logo {
+    background-color: #015360;
+  }
+  .Name {
+    grid-area: logo;
+    margin-top: 20.5%;
+    margin-left: 8.8%;
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+    color: white;
+    font-weight: bold;
+  }
+  .Uplist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 1.9rem;
+    display: block;
+  }
+  .list {
+    color: white;
+    padding: 0.6rem;
+    font-size: 14px;
+    display: block;
+  }
+  .barber {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding-top: 0.25rem;
+    padding-bottom: 0.3rem;
+    margin-top: 1.88rem;
+    text-align: center;
+  }
+  .color ul {
+    list-style: square;
+    padding: 0;
+    padding-left: 1.15rem;
+    margin: 0;
+  }
+  .color {
+    color: #777;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  .title {
+    font-weight: 400;
+    font-size: 24px;
+    display: block;
+    margin: 0;
+    margin-bottom: 17px;
+    color: black;
+  }
+  .wel-come {
+    margin-top: 2.1rem;
+  }
+  .features {
+    margin-top: 40px;
+    line-height: 33px;
+  }
+  .features h2 {
+    margin-bottom: 5px;
+  }
+  .second {
+    margin-top: 23px;
+  }
+  .instal {
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+    line-height: 40px;
+  }
+  .instal ol {
+    margin: 0;
+    padding: 0;
+    padding-left: 2.5rem;
+  }
+  .tmpl-structure{
+    width: 100%;
+    height: 430px;
+  }
+  .mark{
+    background-color: #fff;
+    color: #000;
+  }

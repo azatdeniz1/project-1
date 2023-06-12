@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="proje-1.css" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <main class="main">
+        <section class="Welcome section section-1">
+          <div class="barber">
+            <h1>Barber</h1>
+          </div>
+          <div class="wel-come">
+            <h2 class="title">Welcome To Barber</h2>
+            <div class="color">
+              <p>
+                Firstly, a huge thanks for purchasing this theme, your support
+                is truly appreciated!
+              </p>
+              <p>
+                This document covers the installation and use of this theme and
+                often reveals answers to common problems and issues - read this
+                documentthoroughly if you are experiencing any difficulties. If
+                you have any questions that are beyond the scope of this
+                document. Thank you so much!
+              </p>
+
+              <p></p>
+            </div>
+          </div>
+          <div class="features">
+            <h2 class="title">Template Features</h2>
+            <div class="color">
+              <ul>
+                <li>Clean & Simple Design</li>
+                <li>HTML5 & CSS3</li>
+                <li>Fully Responsive Design</li>
+                <li>PHP/Ajax Powered Working Contact Form</li>
+                <li>All files are well commented</li>
+                <li>
+                  Cross Browser Compatible with IE11+, Firefox, Safari, Opera,
+                  Chrome
+                </li>
+                <li>Extensive Documentation</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="Installing section section-2" style="height:1500px;">
+          <div class="barber second">
+            <h1>Barber</h1>
+          </div>
+          <div class="color instal">
+            <h2 class="title">Installing Template</h2>
+            <ol>
+              <li>
+                After unzip the download pack, you'll found a Template Folder
+                with all the files.
+              </li>
+              <li>
+                You can view this Template in any browser, you can display or
+                edit the Template without an internet connection.(May not wotrk
+                fonts and google map)
+              </li>
+              <li>
+                The only section that will not work is the Contact Section which
+                contains PHP code and requires a server environment for send
+                messages.
+              </li>
+              <li>
+                Now go to your cpanel or open your FTP Client (like Filezilla)
+                and upload the content of the Template on your server root.
+              </li>
+              <li>
+                Once the files are done uploading go to
+                www.yourdomainname.com/index.html
+              </li>
+            </ol>
+          </div>
+        </section>
+        <section class="tmpl-structure section section-3">
+          <h2 class="title">Template Structure</h2>
+          <p class="fifteen">
+            All information within the main content area is nested within a body
+            tag. The general template structure is pretty the same throughout
+            the template. Here is the general structure of main page
+            (index.html).
+          </p>
+          <div class="bos"></div>
+        </section>
+        <section class="css-structure section section-4" style="height: 800px">
+          <h2 class="title">CSS Files and Structure</h2>
+          <p class="fifteen">
+            These are the css files that are loaded into templates in
+            <strong>Head Section</strong>.
+          </p>
+          <h2 class="title">Google Web Fonts</h2>
+          <p>
+            By default, the template loads this font from Google Web Font
+            Services, you can change the font with the one that suits you best.
+          </p>
+          <p class="twenty">
+            Remember to change the font into <strong>style.css</strong>
+          </p>
+        </section>
+        <section class="javascript section section-5" style="height: 600px">
+          <h2 class="title">Javascript Files and Structure</h2>
+          <p class="fifteen">
+            These are the list of Javascript files that are loaded into
+            templates in end of the <strong>Body Section</strong>.
+          </p>
+        </section>
+        <section class="contact-form section section-6" style="height: 900px">
+          <h2 class="title">Contact Form</h2>
+          <p>
+            This is a PHP Script for sending messages to your email, you should
+            replace <strong>demo@site.com</strong> to your email to start
+            receive messages.
+          </p>
+          <pre class="brush:php">
+              $to = 'demo@site.com'; // replace this mail with yours
+              $firstname = $_POST["fname"];
+              $email= $_POST["email"];
+              $headers = 'MIME-Version: 1.0' . "\r\n";
+              $headers .= "From: " . $email . "\r\n"; // Sender's E-mail
+              $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+      
+              $message ='<table style="width:100%">
+                <tr>
+                  <td>'.$firstname.'  '.$laststname.'</td>
+                </tr>
+                <tr><td>Email: '.$email.'</td></tr>
+              </table>';
+      
+              if (@mail($to, $email, $message, $headers))
+              {
+                echo 'The message has been sent.';
+              }else{
+              echo 'failed';
+            }
+          </pre>
+        </section>
+        <section class="subscription-form section section-7" style="height: 600px">
+          <h2 class="title">Subscription Form</h2>
+          <p>
+            Replace this action with your own mailchimp post URL. Don't remove
+            the "". Just paste the url inside "".
+          </p>
+        </section>
+        <section class="video section section-8" style="height: 600px">
+          <h2 class="title">Video Tutorial</h2>
+        </section>
+      </main>
+      <div class="sidebar">
+        <h1 class="Name">BARBER</h1>
+        <ul class="Uplist">
+          <li class="list list-1">Welcome</li>
+          <li class="list list-2">Installation</li>
+          <li class="list list-3">Structure</li>
+          <li class="list list-4">CSS Files</li>
+          <li class="list list-5">Javascript Libraries</li>
+          <li class="list list-6">Contact Form</li>
+          <li class="list list-7">Subscription form</li>
+          <li class="list list-8">Video Tutorial</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
+<script defer src="proje-1.js"></script>
